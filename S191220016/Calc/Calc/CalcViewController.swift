@@ -257,7 +257,7 @@ class CalcViewController: UIViewController {
     
     @IBAction func BinaryOpTouched(_ sender: UIButton) {
         if(sender.titleLabel?.text == "In" || sender.titleLabel?.text == "e^x"){
-            calculator.unaryOpTouched(operation: (sender.titleLabel?.text)!)
+            calculator.unaryOpTouched(_operation: (sender.titleLabel?.text)!)
         }
         else{
             calculator.binaryOpTouched(operation: (sender.titleLabel?.text)!)
@@ -270,7 +270,7 @@ class CalcViewController: UIViewController {
             calculator.binaryOpTouched(operation: (sender.titleLabel?.text)!)
         }
         else{
-            calculator.unaryOpTouched(operation: (sender.titleLabel?.text)!)
+            calculator.unaryOpTouched(_operation: (sender.titleLabel?.text)!)
         }
         refreshAll()
     }

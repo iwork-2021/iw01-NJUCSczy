@@ -576,7 +576,6 @@
                                                                             </userDefinedRuntimeAttribute>
                                                                         </userDefinedRuntimeAttributes>
                                                                         <connections>
-                                                                            <action selector="BinaryOpTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aaY-UN-kZh"/>
                                                                             <action selector="UnaryOpTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PSw-md-gqI"/>
                                                                         </connections>
                                                                     </button>
@@ -791,7 +790,7 @@
                                                                             </userDefinedRuntimeAttribute>
                                                                         </userDefinedRuntimeAttributes>
                                                                         <connections>
-                                                                            <action selector="UnaryOpTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="J5t-9N-b47"/>
+                                                                            <action selector="UnaryOpTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AlI-4i-JrF"/>
                                                                         </connections>
                                                                     </button>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rGY-Zm-o5f">

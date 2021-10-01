@@ -148,6 +148,7 @@ class Calculator: NSObject {
                 return nil
             }
             return log(op)
+            
         case "log10":
             if(op<=0){
                 return nil
@@ -217,6 +218,7 @@ class Calculator: NSObject {
         default:
             return nil
         }
+        return nil
     }
 
     
@@ -280,7 +282,7 @@ class Calculator: NSObject {
                 }
                 let op2:Double=numberBuffer.popLast() as! Double
                 let op1:Double=numberBuffer.popLast() as! Double
-                let newNumber=try BinaryOp(op1: op1,op2: op2,operation: tempBuffer[i] as! String)
+                let newNumber=BinaryOp(op1: op1,op2: op2,operation: tempBuffer[i] as! String)
                 if(newNumber == nil){
                     print("MATH Error!")
                     _error=true
@@ -300,12 +302,12 @@ class Calculator: NSObject {
         }
     }
     
-    func unaryOpTouched(operation:String){
+    func unaryOpTouched(_operation:String){
         if(_error){
             clearAll=true
             clear()
         }
-        let res=UnaryOp(op: displayNumber, operation: operation)
+        let res=UnaryOp(op: displayNumber, operation: _operation)
         if(res==nil){
             errorFunction()
             return
